@@ -1,0 +1,8 @@
+C:\Users\kprasadu>set path=C:\Program Files\Java\jdk1.7.0_09\bin;C:\ford\jdk\ibm\ibm-jdk8u181\bin
+
+C:\Users\kprasadu>cd C:\kprasadu\Self Learn\Jenkins\JavaProject
+
+C:\kprasadu\Self Learn\Jenkins\JavaProject>javac Hello.java
+
+C:\kprasadu\Self Learn\Jenkins\JavaProject>java Hello
+Hello World!
