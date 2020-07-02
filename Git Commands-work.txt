@@ -1,0 +1,190 @@
+git status
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+        Set Path varibale.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git add Hello.java
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git add Hello.class
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.class
+        new file:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Set Path varibale.txt
+
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git commit -m ".....Hello java file added...."
+[master (root-commit) a0fde42] .....Hello java file added....
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Hello.class
+ create mode 100644 Hello.java
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Set Path varibale.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ dir index.html
+dir: cannot access 'index.html': No such file or directory
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ mkdir index.html
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ dir > index.html
+bash: index.html: Is a directory
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Set Path varibale.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git add .
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hello.java
+        new file:   Set Path varibale.txt
+
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git commit -m "..aded remaining files"
+[master 2e7abb0] ..aded remaining files
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 Set Path varibale.txt
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ gits status
+bash: gits: command not found
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git remote add origin https://github.com/Prasadimaxii/Repo2.git
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git push -u origin master
+
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.15 KiB | 590.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Prasadimaxii/Repo2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git log
+commit 2e7abb0160b9cf7192395928cf131dd5b839f548 (HEAD -> master, origin/master)
+Author: kprasadu <kprasadu@ford.com>
+Date:   Thu Jun 25 17:38:37 2020 +0530
+
+    ..aded remaining files
+
+commit a0fde428e5283c821c9d656bca29a406c817f834
+Author: kprasadu <kprasadu@ford.com>
+Date:   Thu Jun 25 16:53:06 2020 +0530
+
+    .....Hello java file added....
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+KPRASADU@WGC1005N9DMH2 MINGW64 /c/kprasadu/Self Learn/Jenkins/JavaProject (master)
+$
